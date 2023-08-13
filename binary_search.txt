@@ -1,0 +1,23 @@
+Binary search is an efficient algorithm used to find the position of a specific value within a sorted 
+array. Here's the pseudocode, flowchart, and an explanation of how it works:
+
+
+
+
+
+
+
+Explanation:
+
+The algorithm starts by setting two pointers, left and right, initially pointing to the start and end of the array, respectively.
+It then enters a loop that continues as long as left is less than or equal to right.
+Inside the loop, the algorithm calculates the middle index, mid, by averaging left and right.
+It compares the value at index mid with the target value:
+If they are equal, the algorithm has found the target and returns the index.
+If the value at index mid is less than the target, it means the target might be in the right half of the array, so left is updated to mid + 1.
+If the value at index mid is greater than the target, it means the target might be in the left half of the array, so right is updated to mid - 1.
+The loop continues until left becomes greater than right, indicating that the target is not in the array. The algorithm then returns a "not found" result.
+Binary search reduces the search space by half with each iteration, making it more efficient than linear search for large sorted arrays.
+
+
+
